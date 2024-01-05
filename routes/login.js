@@ -4,7 +4,7 @@ const { AuthenticateUser } = require('../controllers/login')
 const client = require("../redis")
 
 
-client.connect()/*.then(() =>console.log("connected to redis"))*/
+client.connect()
 
 router.post("/", async (req, res) =>{
     const {email, password} = await req.body;
