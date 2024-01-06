@@ -31,7 +31,7 @@ async function InsertVerifyUser (name, email, password) {
         }
        
 
-        const activationLink = `${process.env.online_renderUrl}/signin/${token}`;
+        const activationLink = `https://userauth-tsuw.onrender.com/signin/${token}`;
         const content = `<h4>Hi User</h4>
         <h5>Welcome to the recipe book app</h5>
         <p>Thanks for signing, click below the link to activate your account</p>
