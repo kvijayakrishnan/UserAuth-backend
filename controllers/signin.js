@@ -31,7 +31,7 @@ async function InsertVerifyUser (name, email, password) {
         }
        
 
-        const activationLink = `http://localhost:4500/signin/${token}`;
+        const activationLink = `${process.env.online_renderUrl}/signin/${token}`;
         const content = `<h4>Hi User</h4>
         <h5>Welcome to the recipe book app</h5>
         <p>Thanks for signing, click below the link to activate your account</p>
