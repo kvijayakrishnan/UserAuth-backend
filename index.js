@@ -10,7 +10,7 @@ const client = require('./redis');
 
 
 const app = express();
-const PORT = 4500;
+const PORT = 4500 || process.env.PORT;
 connectDb();
 // client();
 app.use(express.json())
