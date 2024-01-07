@@ -16,7 +16,7 @@ router.get("/:token", async(req, res) =>{
         `<html>
             <body>
                 <h4>Hi User</h4>
-                <h5>Welcome to the recipe book app</h5>
+                <h5>Welcome to the user authentication app</h5>
                 <p>Registration successful</p>
                 <p>Regards</p>
                 <p>Team</p>
