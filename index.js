@@ -10,7 +10,7 @@ const client = require('./redis');
 
 
 const app = express();
-const PORT = 4500 || process.env.PORT;
+const PORT = process.env.PORT || 4500;
 connectDb();
 // client();
 app.use(express.json())
@@ -27,7 +27,7 @@ app.use("/home", homeRouter);
 
 
 app.listen(PORT, () =>{
-     console.log(`App listening on ${process.env.PORT}`)
+     console.log(`App listening on ${PORT}`)
 })
 
 
